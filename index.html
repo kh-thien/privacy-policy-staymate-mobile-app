@@ -1,171 +1,345 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Privacy Policy - Stay Mate</title>
   <style>
-    body { 
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       padding: 1em;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
     }
+    h1, h2 {
+      color: #1f2933;
+    }
     h2 {
-      color: #333;
       margin-top: 1.5em;
     }
     ul {
-      margin: 0.5em 0;
+      margin: 0.5em 0 1em 1.5em;
     }
     li {
       margin: 0.3em 0;
     }
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 1.5em;
+    }
+    .lang-switch button {
+      padding: 8px 18px;
+      border: 1px solid #2563eb;
+      border-radius: 999px;
+      background: transparent;
+      color: #2563eb;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .lang-switch button.active {
+      background: #2563eb;
+      color: #fff;
+    }
+    [data-lang-section] {
+      display: none;
+    }
+    [data-lang-section].active {
+      display: block;
+    }
+    .note {
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      padding: 10px 16px;
+      margin: 12px 0;
+    }
   </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>This privacy policy applies to the <strong>Stay Mate</strong> app ("Application") for mobile devices created by Khac Thien Nguyen ("Service Provider") as a free service. This service is provided "AS IS".</p>
+  <div class="lang-switch">
+    <button type="button" data-lang="vi" class="active">Tiếng Việt</button>
+    <button type="button" data-lang="en">English</button>
+  </div>
 
-<p><strong>Stay Mate</strong> is a rental property management application designed exclusively for tenants. It allows you to manage your rental information, communicate with your landlord, track bills, report issues, and access contract documents.</p>
+  <div id="lang-vi" data-lang-section="vi" class="active">
+    <h1>Chính Sách Quyền Riêng Tư</h1>
+    <p>Chính sách này áp dụng cho ứng dụng <strong>Stay Mate</strong> (“Ứng dụng”) trên thiết bị di động, được phát triển bởi Khac Thien Nguyen (“Nhà cung cấp dịch vụ”) và cung cấp miễn phí. Dịch vụ được cung cấp theo nguyên tắc “nguyên trạng”.</p>
 
-<h2>Information We Collect and Use</h2>
-<p>For the purpose of delivering the main features of the Application, we may collect and process the following information:</p>
+    <p><strong>Stay Mate</strong> là ứng dụng quản lý thuê trọ dành riêng cho người thuê. Ứng dụng hỗ trợ quản lý hợp đồng, trao đổi với chủ nhà, theo dõi hóa đơn, báo cáo sự cố và truy cập tài liệu đính kèm.</p>
 
-<h3>Account Information</h3>
-<ul>
-  <li>Name, phone number, email address, and user ID</li>
-  <li>Profile information you provide</li>
-</ul>
+    <h2>Thông Tin Chúng Tôi Thu Thập Và Sử Dụng</h2>
+    <p>Để cung cấp các tính năng chính, chúng tôi có thể thu thập và xử lý các loại dữ liệu sau:</p>
 
-<h3>Rental Contract Information</h3>
-<ul>
-  <li>Rental contract details provided by your landlord or property manager</li>
-  <li>Contract images you upload or that are shared with you</li>
-  <li>Contract terms, rental period, and property address</li>
-</ul>
+    <h3>Thông tin tài khoản</h3>
+    <ul>
+      <li>Họ tên, số điện thoại, email, mã người dùng</li>
+      <li>Các thông tin hồ sơ bạn cung cấp</li>
+    </ul>
 
-<h3>Bill and Payment Information</h3>
-<ul>
-  <li>Monthly rental bill details (amount, due date, payment status)</li>
-  <li>Landlord's bank account information (for display purposes only)</li>
-  <li><strong>Note:</strong> The Application does NOT process payments. It only displays payment information. All actual bank transfers must be completed through your own banking app.</li>
-</ul>
+    <h3>Thông tin hợp đồng thuê</h3>
+    <ul>
+      <li>Chi tiết hợp đồng do chủ nhà/công ty quản lý cung cấp</li>
+      <li>Hình ảnh hợp đồng bạn tải lên hoặc được chia sẻ</li>
+      <li>Điều khoản, thời hạn thuê, địa chỉ bất động sản</li>
+    </ul>
 
-<h3>Communication Data</h3>
-<ul>
-  <li>Chat messages exchanged between you and your landlord</li>
-  <li>Images and attachments sent via chat</li>
-  <li>Message timestamps and read status</li>
-</ul>
+    <h3>Thông tin hóa đơn & thanh toán</h3>
+    <ul>
+      <li>Số tiền, hạn thanh toán, trạng thái hóa đơn</li>
+      <li>Thông tin tài khoản ngân hàng của chủ nhà (chỉ để hiển thị)</li>
+    </ul>
+    <div class="note"><strong>Lưu ý:</strong> Stay Mate KHÔNG xử lý giao dịch. Người dùng tự chuyển khoản bằng ứng dụng ngân hàng của mình.</div>
 
-<h3>Issue Reports and Maintenance Requests</h3>
-<ul>
-  <li>Descriptions of reported issues or maintenance requests</li>
-  <li>Photos you upload when reporting problems</li>
-  <li>Issue status and resolution history</li>
-</ul>
+    <h3>Dữ liệu trao đổi</h3>
+    <ul>
+      <li>Tin nhắn chat giữa bạn và chủ nhà</li>
+      <li>Hình ảnh, tệp đính kèm gửi qua chat</li>
+      <li>Thời gian gửi/đọc tin</li>
+    </ul>
 
-<h3>Images and Media</h3>
-<ul>
-  <li>Photos you capture using the camera for issue reports or chat messages</li>
-  <li>Images you select from your photo library to upload</li>
-  <li>Contract images you view or download</li>
-</ul>
+    <h3>Báo cáo sự cố & yêu cầu bảo trì</h3>
+    <ul>
+      <li>Mô tả sự cố, yêu cầu bảo trì</li>
+      <li>Ảnh bạn tải lên khi báo cáo</li>
+      <li>Trạng thái xử lý, lịch sử cập nhật</li>
+    </ul>
 
-<h3>Device and Technical Information</h3>
-<ul>
-  <li>Device model and operating system version</li>
-  <li>App version and crash logs (for stability and debugging only)</li>
-  <li>Push notification tokens (if you enable notifications)</li>
-</ul>
+    <h3>Hình ảnh & phương tiện</h3>
+    <ul>
+      <li>Ảnh chụp bằng camera cho báo cáo hoặc chat</li>
+      <li>Ảnh chọn từ thư viện để tải lên</li>
+      <li>Ảnh hợp đồng bạn xem hoặc tải xuống</li>
+    </ul>
 
-<p>The Application does <strong>not collect precise location information</strong> from your device.</p>
+    <h3>Thông tin thiết bị & kỹ thuật</h3>
+    <ul>
+      <li>Mẫu thiết bị, phiên bản hệ điều hành</li>
+      <li>Phiên bản ứng dụng, log lỗi (chỉ để cải thiện ổn định)</li>
+      <li>Mã thông báo push (khi bạn bật thông báo)</li>
+    </ul>
 
-<h2>How We Use Your Information</h2>
-<p>Your data is used solely to provide and improve the core functionalities of the Application, including:</p>
-<ul>
-  <li>Managing your rental account and profile</li>
-  <li>Displaying and allowing you to download contract documents and images</li>
-  <li>Showing bill information and payment details for manual bank transfers</li>
-  <li>Facilitating communication between you and your landlord through in-app chat</li>
-  <li>Processing and tracking issue reports with uploaded photos</li>
-  <li>Sending notifications about new messages, bills, or issue updates (if enabled)</li>
-  <li>Improving app stability, performance, and user experience</li>
-</ul>
+    <p>Ứng dụng <strong>không thu thập vị trí chính xác</strong> của thiết bị.</p>
 
-<h2>Data Storage</h2>
-<p>Your information is stored securely using cloud storage services. Images and documents are stored on secure servers and are accessible only to authorized parties (you and your landlord).</p>
+    <h2>Mục Đích Sử Dụng Dữ Liệu</h2>
+    <ul>
+      <li>Quản lý tài khoản thuê trọ và hồ sơ người dùng</li>
+      <li>Hiển thị/tải tài liệu, hình ảnh hợp đồng</li>
+      <li>Hiển thị hóa đơn, thông tin chuyển khoản thủ công</li>
+      <li>Hỗ trợ nhắn tin giữa bạn và chủ nhà</li>
+      <li>Xử lý, theo dõi báo cáo sự cố kèm ảnh</li>
+      <li>Gửi thông báo về tin nhắn, hóa đơn, cập nhật sự cố (nếu bật)</li>
+      <li>Cải thiện hiệu năng, độ ổn định và trải nghiệm</li>
+    </ul>
 
-<h2>Third-Party Access</h2>
-<p>We do <strong>not sell or share</strong> your personal data for marketing purposes.</p>
+    <h2>Lưu Trữ Dữ Liệu</h2>
+    <p>Dữ liệu được lưu an toàn trên hạ tầng đám mây. Hình ảnh/tài liệu chỉ cho phép bạn và chủ nhà được cấp quyền truy cập.</p>
 
-<p>We may share data with:</p>
-<ul>
-  <li><strong>Your landlord or property manager:</strong> for rental-related interactions, communication, contract management, and issue resolution</li>
-  <li><strong>Cloud service providers:</strong> trusted third parties that assist us in app functionality (e.g., cloud storage, messaging infrastructure)</li>
-  <li><strong>Government authorities:</strong> only when required by law or legal process</li>
-</ul>
+    <h2>Chia Sẻ Với Bên Thứ Ba</h2>
+    <p>Chúng tôi <strong>không bán hoặc chia sẻ</strong> dữ liệu cho mục đích tiếp thị.</p>
+    <ul>
+      <li><strong>Chủ nhà/đơn vị quản lý:</strong> phục vụ trao đổi, quản lý hợp đồng, xử lý sự cố</li>
+      <li><strong>Dịch vụ đám mây:</strong> nhà cung cấp hạ tầng đáng tin cậy (lưu trữ, nhắn tin...)</li>
+      <li><strong>Cơ quan nhà nước:</strong> khi pháp luật yêu cầu</li>
+    </ul>
 
-<h2>App Permissions</h2>
-<p>The Application may request the following permissions:</p>
+    <h2>Quyền Truy Cập Của Ứng Dụng</h2>
+    <ul>
+      <li><strong>Camera:</strong> chụp ảnh cho báo cáo/chats</li>
+      <li><strong>Thư viện ảnh:</strong> chọn ảnh tải lên hoặc tải hợp đồng</li>
+      <li><strong>Thông báo:</strong> nhận cảnh báo mới (tùy chọn)</li>
+      <li><strong>Kết nối Internet:</strong> đồng bộ dữ liệu, gửi tin</li>
+    </ul>
+    <p>Chúng tôi chỉ truy cập nội dung bạn <strong>chủ động chọn</strong> chia sẻ.</p>
 
-<ul>
-  <li><strong>Camera:</strong> to capture photos when reporting issues or sending images in chat</li>
-  <li><strong>Photo Library:</strong> to select and upload images for issue reports, chat messages, or to download contract images</li>
-  <li><strong>Notifications:</strong> to send you alerts about new messages, bills, or issue updates (optional, can be disabled in device settings)</li>
-  <li><strong>Internet Access:</strong> to sync data, send messages, and communicate with servers</li>
-</ul>
+    <h2>Xử Lý Thanh Toán</h2>
+    <p>Stay Mate chỉ hiển thị số tiền, hạn thanh toán và thông tin tài khoản chủ nhà. Người dùng tự thực hiện chuyển khoản bên ngoài.</p>
 
-<p>We only access images and data that you <strong>explicitly choose</strong> to share or upload.</p>
+    <h2>Thời Gian Lưu Dữ Liệu</h2>
+    <ul>
+      <li>Trong suốt thời gian bạn dùng ứng dụng</li>
+      <li>Khi cần thiết để cung cấp dịch vụ</li>
+      <li>Theo yêu cầu pháp lý/hợp đồng</li>
+    </ul>
+    <p>Gửi yêu cầu xóa dữ liệu qua <strong>staymate.home@gmail.com</strong>. Chúng tôi sẽ xử lý trong thời gian hợp lý, trừ khi pháp luật yêu cầu lưu giữ.</p>
 
-<h2>Payment Processing</h2>
-<p><strong>Important:</strong> Stay Mate does NOT handle or process any financial transactions. The Application only displays:</p>
-<ul>
-  <li>Bill amounts and due dates</li>
-  <li>Landlord's bank account information for reference</li>
-</ul>
+    <h2>Trẻ Em</h2>
+    <p>Ứng dụng không dành cho người dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
 
-<p>All actual payment transfers must be completed by you through your own banking application. We do not have access to your bank account, credit card information, or any financial credentials.</p>
+    <h2>Bảo Mật</h2>
+    <p>Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức phù hợp để bảo vệ dữ liệu, nhưng không có hệ thống nào an toàn tuyệt đối.</p>
 
-<h2>Data Retention</h2>
-<p>We retain your data for as long as:</p>
-<ul>
-  <li>You actively use the Application</li>
-  <li>It is required to provide the service</li>
-  <li>Required by law or contractual obligations</li>
-</ul>
+    <h2>Quyền Của Bạn</h2>
+    <ul>
+      <li>Truy cập dữ liệu cá nhân</li>
+      <li>Yêu cầu chỉnh sửa thông tin sai</li>
+      <li>Yêu cầu xóa dữ liệu</li>
+      <li>Rút lại sự đồng ý</li>
+      <li>Nhận bản sao dữ liệu ở định dạng có thể chuyển giao</li>
+    </ul>
+    <p>Liên hệ: <strong>staymate.home@gmail.com</strong></p>
 
-<p>You may request data deletion by contacting us at: <strong>staymate.home@gmail.com</strong>. Upon request, we will delete your personal data within a reasonable timeframe, except where retention is required by law.</p>
+    <h2>Thay Đổi Chính Sách</h2>
+    <p>Chúng tôi có thể cập nhật chính sách và sẽ thông báo qua ứng dụng hoặc email. Việc tiếp tục sử dụng ứng dụng đồng nghĩa bạn chấp nhận bản cập nhật.</p>
 
-<h2>Children's Privacy</h2>
-<p>The Application is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe a child has provided personal information to us, please contact us so we can promptly remove it.</p>
+    <p><strong>Ngày hiệu lực:</strong> 10/11/2025<br>
+    <strong>Cập nhật lần cuối:</strong> 19/11/2025</p>
 
-<h2>Security</h2>
-<p>We implement appropriate technical and organizational security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+    <h2>Liên Hệ</h2>
+    <p>Email: <strong>staymate.home@gmail.com</strong></p>
+  </div>
 
-<h2>Your Rights</h2>
-<p>You have the right to:</p>
-<ul>
-  <li>Access your personal data</li>
-  <li>Request correction of inaccurate data</li>
-  <li>Request deletion of your data</li>
-  <li>Withdraw consent for data processing</li>
-  <li>Export your data in a portable format</li>
-</ul>
+  <div id="lang-en" data-lang-section="en">
+    <h1>Privacy Policy</h1>
+    <p>This privacy policy applies to the <strong>Stay Mate</strong> app (“Application”) for mobile devices created by Khac Thien Nguyen (“Service Provider”) as a free service. This service is provided “AS IS”.</p>
 
-<p>To exercise these rights, contact us at: <strong>staymate.home@gmail.com</strong></p>
+    <p><strong>Stay Mate</strong> is a rental property management application designed exclusively for tenants. It allows you to manage your rental information, communicate with your landlord, track bills, report issues, and access contract documents.</p>
 
-<h2>Changes to This Privacy Policy</h2>
-<p>This Privacy Policy may be updated from time to time to reflect changes in our practices or legal requirements. We will notify you of significant changes through the Application or via email. Continued use of the Application after changes constitutes acceptance of the updated policy.</p>
+    <h2>Information We Collect and Use</h2>
+    <p>To deliver the core features, we may collect and process the following information:</p>
 
-<p><strong>Effective date:</strong> November 10, 2025<br>
-<strong>Last updated:</strong> November 19, 2025</p>
+    <h3>Account Information</h3>
+    <ul>
+      <li>Name, phone number, email address, and user ID</li>
+      <li>Profile information you provide</li>
+    </ul>
 
-<h2>Contact Us</h2>
-<p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
-<p><strong>Email:</strong> staymate.home@gmail.com</p>
+    <h3>Rental Contract Information</h3>
+    <ul>
+      <li>Contract details provided by your landlord or property manager</li>
+      <li>Contract images you upload or that are shared with you</li>
+      <li>Contract terms, rental period, property address</li>
+    </ul>
 
+    <h3>Bill and Payment Information</h3>
+    <ul>
+      <li>Monthly rental bill details (amount, due date, payment status)</li>
+      <li>Landlord’s bank account information (display only)</li>
+    </ul>
+    <div class="note"><strong>Note:</strong> The Application does NOT process payments. All transfers happen through your own banking app.</div>
+
+    <h3>Communication Data</h3>
+    <ul>
+      <li>Chat messages exchanged with your landlord</li>
+      <li>Images and attachments sent via chat</li>
+      <li>Timestamps and read receipts</li>
+    </ul>
+
+    <h3>Issue Reports and Maintenance Requests</h3>
+    <ul>
+      <li>Descriptions of reported issues or maintenance tasks</li>
+      <li>Photos you upload when reporting problems</li>
+      <li>Status updates and resolution history</li>
+    </ul>
+
+    <h3>Images and Media</h3>
+    <ul>
+      <li>Photos captured via camera for reports or chat</li>
+      <li>Images picked from your photo library</li>
+      <li>Contract images you view or download</li>
+    </ul>
+
+    <h3>Device and Technical Information</h3>
+    <ul>
+      <li>Device model and OS version</li>
+      <li>App version and crash logs (stability/debug only)</li>
+      <li>Push notification tokens (if enabled)</li>
+    </ul>
+
+    <p>The Application <strong>does not collect precise location</strong> from your device.</p>
+
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li>Manage your rental account and profile</li>
+      <li>Display and let you download contract documents/images</li>
+      <li>Show bill details and manual bank transfer instructions</li>
+      <li>Enable in-app chat with your landlord</li>
+      <li>Process and track issue reports with photos</li>
+      <li>Send notifications about messages, bills, or issue updates (if enabled)</li>
+      <li>Improve app stability, performance, and UX</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>Your information is stored securely using cloud services. Images and documents are accessible only to authorized parties (you and your landlord).</p>
+
+    <h2>Third-Party Access</h2>
+    <p>We do <strong>not sell or share</strong> your data for marketing.</p>
+    <ul>
+      <li><strong>Your landlord/property manager:</strong> rental interactions, contract management, issue resolution</li>
+      <li><strong>Cloud service providers:</strong> trusted vendors powering storage/messaging</li>
+      <li><strong>Government authorities:</strong> when required by law</li>
+    </ul>
+
+    <h2>App Permissions</h2>
+    <ul>
+      <li><strong>Camera:</strong> capture photos for reports/chat</li>
+      <li><strong>Photo Library:</strong> select/upload images or download contracts</li>
+      <li><strong>Notifications:</strong> receive alerts about new items (optional)</li>
+      <li><strong>Internet:</strong> sync data, send messages</li>
+    </ul>
+    <p>We only access media/data you <strong>explicitly choose</strong> to share.</p>
+
+    <h2>Payment Processing</h2>
+    <p>Stay Mate only displays amounts, due dates, and landlord bank info. Actual transfers happen outside the app.</p>
+
+    <h2>Data Retention</h2>
+    <ul>
+      <li>While you actively use the Application</li>
+      <li>As required to provide the service</li>
+      <li>As mandated by law or contracts</li>
+    </ul>
+    <p>Request deletion via <strong>staymate.home@gmail.com</strong>. We comply unless retention is legally required.</p>
+
+    <h2>Children’s Privacy</h2>
+    <p>The Application is not intended for children under 13, and we do not knowingly collect their data.</p>
+
+    <h2>Security</h2>
+    <p>We implement appropriate safeguards, though no system is 100% secure.</p>
+
+    <h2>Your Rights</h2>
+    <ul>
+      <li>Access your personal data</li>
+      <li>Request corrections</li>
+      <li>Request deletion</li>
+      <li>Withdraw consent</li>
+      <li>Export your data in a portable format</li>
+    </ul>
+    <p>Contact: <strong>staymate.home@gmail.com</strong></p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy and will notify you via the Application or email. Continued use signifies acceptance.</p>
+
+    <p><strong>Effective date:</strong> November 10, 2025<br>
+    <strong>Last updated:</strong> November 19, 2025</p>
+
+    <h2>Contact Us</h2>
+    <p>Email: <strong>staymate.home@gmail.com</strong></p>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.lang-switch button');
+    const sections = document.querySelectorAll('[data-lang-section]');
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach((b) => b.classList.remove('active'));
+        sections.forEach((section) => section.classList.remove('active'));
+
+        btn.classList.add('active');
+        const target = btn.dataset.lang;
+        document
+          .querySelector(`[data-lang-section="${target}"]`)
+          .classList.add('active');
+
+        localStorage.setItem('privacy_lang', target);
+      });
+    });
+
+    const savedLang = localStorage.getItem('privacy_lang');
+    if (savedLang && savedLang !== 'vi') {
+      document.querySelector(`.lang-switch button[data-lang="${savedLang}"]`)
+        ?.click();
+    }
+  </script>
 </body>
 </html>
